@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iFa-lc-kUi">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,120 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MongolianIPAKeyboardContainer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5mt-Jc-lbu">
+                                <rect key="frame" x="16" y="164" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tbs-QA-Vlw">
+                                <rect key="frame" x="16" y="202" width="36" height="30"/>
+                                <state key="normal" title="Copy"/>
+                                <connections>
+                                    <action selector="onCopyTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3ld-KB-kbl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vVZ-E5-zU9">
+                                <rect key="frame" x="323" y="202" width="36" height="30"/>
+                                <state key="normal" title="Clear"/>
+                                <connections>
+                                    <action selector="onClearTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3xV-W0-YGY"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="tbs-QA-Vlw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="2MU-34-o4u"/>
+                            <constraint firstItem="tbs-QA-Vlw" firstAttribute="top" secondItem="5mt-Jc-lbu" secondAttribute="bottom" constant="8" id="bKh-xF-16q"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5mt-Jc-lbu" secondAttribute="trailing" constant="16" id="f2n-8t-Y4L"/>
+                            <constraint firstItem="vVZ-E5-zU9" firstAttribute="top" secondItem="5mt-Jc-lbu" secondAttribute="bottom" constant="8" id="gF8-Bu-rZ7"/>
+                            <constraint firstItem="5mt-Jc-lbu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="hU3-Iw-o5g"/>
+                            <constraint firstItem="5mt-Jc-lbu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="hlH-QQ-7bU"/>
+                            <constraint firstItem="tbs-QA-Vlw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="lkr-XN-Bfb"/>
+                            <constraint firstItem="tbs-QA-Vlw" firstAttribute="top" secondItem="5mt-Jc-lbu" secondAttribute="bottom" constant="8" id="ugw-pZ-La6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vVZ-E5-zU9" secondAttribute="trailing" constant="16" id="vdq-43-mm3"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="cEb-Yl-Dcx">
+                        <barButtonItem key="rightBarButtonItem" title="Help" id="HpF-eH-j1A">
+                            <connections>
+                                <segue destination="7Dw-x1-ExO" kind="show" id="iN2-rf-TAs"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="textField" destination="5mt-Jc-lbu" id="q4q-4a-I51"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="456.80000000000001" y="98.50074962518741"/>
+        </scene>
+        <!--Help View Controller-->
+        <scene sceneID="e6s-7Z-oKm">
+            <objects>
+                <viewController id="7Dw-x1-ExO" customClass="HelpViewController" customModule="MongolianIPAKeyboardContainer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="k5V-wu-Tsd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How to install the keyboard" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pR7-vl-oqu">
+                                <rect key="frame" x="83" y="124" width="208" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="OPJ-Me-j7Y">
+                                <rect key="frame" x="16" y="177" width="343" height="470"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">1. Go to Settings &gt; General &gt; Keyboard &gt; Keyboards.
+
+2. Tap Add New Keyboard.
+
+3. In the Third-Party Keyboards group, tap Mongolian IPA.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="zug-kq-teP" firstAttribute="bottom" secondItem="OPJ-Me-j7Y" secondAttribute="bottom" constant="20" id="3HL-eC-oee"/>
+                            <constraint firstItem="pR7-vl-oqu" firstAttribute="top" secondItem="zug-kq-teP" secondAttribute="top" constant="60" id="LiF-gR-Y4d"/>
+                            <constraint firstItem="zug-kq-teP" firstAttribute="trailing" secondItem="OPJ-Me-j7Y" secondAttribute="trailing" constant="16" id="m7M-8s-VNJ"/>
+                            <constraint firstItem="OPJ-Me-j7Y" firstAttribute="leading" secondItem="zug-kq-teP" secondAttribute="leading" constant="16" id="na2-sp-wHr"/>
+                            <constraint firstItem="pR7-vl-oqu" firstAttribute="centerX" secondItem="k5V-wu-Tsd" secondAttribute="centerX" id="rRZ-nL-GDX"/>
+                            <constraint firstItem="OPJ-Me-j7Y" firstAttribute="top" secondItem="pR7-vl-oqu" secondAttribute="bottom" constant="32" id="yyf-Fs-CMx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zug-kq-teP"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Ph-5B-FrC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1196" y="98.50074962518741"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="oEB-9g-vow">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="iFa-lc-kUi" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0n3-a8-GF2">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="dbP-oB-BGy"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tvm-1v-nzt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-287" y="99"/>
         </scene>
     </scenes>
 </document>

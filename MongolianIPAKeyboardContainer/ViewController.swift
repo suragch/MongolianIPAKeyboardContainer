@@ -1,25 +1,24 @@
-//
-//  ViewController.swift
-//  MongolianIPAKeyboardContainer
-//
-//  Created by MongolSuragch on 3/24/18.
-//  Copyright © 2018 MongolSuragch. All rights reserved.
-//
-
 import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var textField: UITextField!
+    
+    @IBAction func onCopyTap(_ sender: UIButton) {
+        guard let text = textField.text, text != "" else {
+            return
+        }
+        UIPasteboard.general.string = text
+    }
+    
+    @IBAction func onClearTap(_ sender: UIButton) {
+        textField.text = ""
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        textField.becomeFirstResponder()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 
 }
 

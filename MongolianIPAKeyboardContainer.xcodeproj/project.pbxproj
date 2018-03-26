@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		50B910EE20665F1200601821 /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B910ED20665F1200601821 /* HelpViewController.swift */; };
 		50F3706F2066030E009C48FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F3706E2066030E009C48FE /* AppDelegate.swift */; };
 		50F370712066030E009C48FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F370702066030E009C48FE /* ViewController.swift */; };
 		50F370742066030E009C48FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50F370722066030E009C48FE /* Main.storyboard */; };
@@ -14,6 +15,12 @@
 		50F370792066030F009C48FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50F370772066030F009C48FE /* LaunchScreen.storyboard */; };
 		50F370842066030F009C48FE /* MongolianIPAKeyboardContainerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F370832066030F009C48FE /* MongolianIPAKeyboardContainerTests.swift */; };
 		50F3708F2066030F009C48FE /* MongolianIPAKeyboardContainerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F3708E2066030F009C48FE /* MongolianIPAKeyboardContainerUITests.swift */; };
+		50F370A3206603D0009C48FE /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F370A2206603D0009C48FE /* KeyboardViewController.swift */; };
+		50F370A7206603D0009C48FE /* Mongolian IPA.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 50F370A0206603D0009C48FE /* Mongolian IPA.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		50F370AD2066116F009C48FE /* IpaKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F370AC2066116F009C48FE /* IpaKeyboard.swift */; };
+		50F370AF2066122C009C48FE /* KeyboardKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F370AE2066122C009C48FE /* KeyboardKey.swift */; };
+		50F370B12066127D009C48FE /* KeyboardTextKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F370B02066127D009C48FE /* KeyboardTextKey.swift */; };
+		50F370B3206612DA009C48FE /* Ipa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F370B2206612DA009C48FE /* Ipa.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,9 +38,31 @@
 			remoteGlobalIDString = 50F3706A2066030E009C48FE;
 			remoteInfo = MongolianIPAKeyboardContainer;
 		};
+		50F370A5206603D0009C48FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50F370632066030D009C48FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50F3709F206603D0009C48FE;
+			remoteInfo = "Mongolian IPA";
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		50F370AB206603D0009C48FE /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				50F370A7206603D0009C48FE /* Mongolian IPA.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		50B910ED20665F1200601821 /* HelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
 		50F3706B2066030E009C48FE /* MongolianIPAKeyboardContainer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MongolianIPAKeyboardContainer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50F3706E2066030E009C48FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		50F370702066030E009C48FE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +76,13 @@
 		50F3708A2066030F009C48FE /* MongolianIPAKeyboardContainerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MongolianIPAKeyboardContainerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		50F3708E2066030F009C48FE /* MongolianIPAKeyboardContainerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MongolianIPAKeyboardContainerUITests.swift; sourceTree = "<group>"; };
 		50F370902066030F009C48FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50F370A0206603D0009C48FE /* Mongolian IPA.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Mongolian IPA.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		50F370A2206603D0009C48FE /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		50F370A4206603D0009C48FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50F370AC2066116F009C48FE /* IpaKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IpaKeyboard.swift; sourceTree = "<group>"; };
+		50F370AE2066122C009C48FE /* KeyboardKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardKey.swift; sourceTree = "<group>"; };
+		50F370B02066127D009C48FE /* KeyboardTextKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardTextKey.swift; sourceTree = "<group>"; };
+		50F370B2206612DA009C48FE /* Ipa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ipa.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +107,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		50F3709D206603D0009C48FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -80,6 +123,7 @@
 				50F3706D2066030E009C48FE /* MongolianIPAKeyboardContainer */,
 				50F370822066030F009C48FE /* MongolianIPAKeyboardContainerTests */,
 				50F3708D2066030F009C48FE /* MongolianIPAKeyboardContainerUITests */,
+				50F370A1206603D0009C48FE /* Mongolian IPA */,
 				50F3706C2066030E009C48FE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +134,7 @@
 				50F3706B2066030E009C48FE /* MongolianIPAKeyboardContainer.app */,
 				50F3707F2066030F009C48FE /* MongolianIPAKeyboardContainerTests.xctest */,
 				50F3708A2066030F009C48FE /* MongolianIPAKeyboardContainerUITests.xctest */,
+				50F370A0206603D0009C48FE /* Mongolian IPA.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,6 +144,7 @@
 			children = (
 				50F3706E2066030E009C48FE /* AppDelegate.swift */,
 				50F370702066030E009C48FE /* ViewController.swift */,
+				50B910ED20665F1200601821 /* HelpViewController.swift */,
 				50F370722066030E009C48FE /* Main.storyboard */,
 				50F370752066030E009C48FE /* Assets.xcassets */,
 				50F370772066030F009C48FE /* LaunchScreen.storyboard */,
@@ -125,6 +171,19 @@
 			path = MongolianIPAKeyboardContainerUITests;
 			sourceTree = "<group>";
 		};
+		50F370A1206603D0009C48FE /* Mongolian IPA */ = {
+			isa = PBXGroup;
+			children = (
+				50F370A2206603D0009C48FE /* KeyboardViewController.swift */,
+				50F370AC2066116F009C48FE /* IpaKeyboard.swift */,
+				50F370B2206612DA009C48FE /* Ipa.swift */,
+				50F370B02066127D009C48FE /* KeyboardTextKey.swift */,
+				50F370AE2066122C009C48FE /* KeyboardKey.swift */,
+				50F370A4206603D0009C48FE /* Info.plist */,
+			);
+			path = "Mongolian IPA";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,10 +194,12 @@
 				50F370672066030E009C48FE /* Sources */,
 				50F370682066030E009C48FE /* Frameworks */,
 				50F370692066030E009C48FE /* Resources */,
+				50F370AB206603D0009C48FE /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				50F370A6206603D0009C48FE /* PBXTargetDependency */,
 			);
 			name = MongolianIPAKeyboardContainer;
 			productName = MongolianIPAKeyboardContainer;
@@ -181,6 +242,23 @@
 			productReference = 50F3708A2066030F009C48FE /* MongolianIPAKeyboardContainerUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		50F3709F206603D0009C48FE /* Mongolian IPA */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50F370A8206603D0009C48FE /* Build configuration list for PBXNativeTarget "Mongolian IPA" */;
+			buildPhases = (
+				50F3709C206603D0009C48FE /* Sources */,
+				50F3709D206603D0009C48FE /* Frameworks */,
+				50F3709E206603D0009C48FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Mongolian IPA";
+			productName = "Mongolian IPA";
+			productReference = 50F370A0206603D0009C48FE /* Mongolian IPA.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -205,6 +283,10 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = 50F3706A2066030E009C48FE;
 					};
+					50F3709F206603D0009C48FE = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 50F370662066030D009C48FE /* Build configuration list for PBXProject "MongolianIPAKeyboardContainer" */;
@@ -223,6 +305,7 @@
 				50F3706A2066030E009C48FE /* MongolianIPAKeyboardContainer */,
 				50F3707E2066030F009C48FE /* MongolianIPAKeyboardContainerTests */,
 				50F370892066030F009C48FE /* MongolianIPAKeyboardContainerUITests */,
+				50F3709F206603D0009C48FE /* Mongolian IPA */,
 			);
 		};
 /* End PBXProject section */
@@ -252,6 +335,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		50F3709E206603D0009C48FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -260,6 +350,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				50F370712066030E009C48FE /* ViewController.swift in Sources */,
+				50B910EE20665F1200601821 /* HelpViewController.swift in Sources */,
 				50F3706F2066030E009C48FE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +371,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		50F3709C206603D0009C48FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50F370A3206603D0009C48FE /* KeyboardViewController.swift in Sources */,
+				50F370AF2066122C009C48FE /* KeyboardKey.swift in Sources */,
+				50F370B3206612DA009C48FE /* Ipa.swift in Sources */,
+				50F370AD2066116F009C48FE /* IpaKeyboard.swift in Sources */,
+				50F370B12066127D009C48FE /* KeyboardTextKey.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -292,6 +395,11 @@
 			isa = PBXTargetDependency;
 			target = 50F3706A2066030E009C48FE /* MongolianIPAKeyboardContainer */;
 			targetProxy = 50F3708B2066030F009C48FE /* PBXContainerItemProxy */;
+		};
+		50F370A6206603D0009C48FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50F3709F206603D0009C48FE /* Mongolian IPA */;
+			targetProxy = 50F370A5206603D0009C48FE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -363,7 +471,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -414,7 +522,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -425,6 +533,7 @@
 		50F370942066030F009C48FE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HSUZ2UJNHR;
@@ -440,6 +549,7 @@
 		50F370952066030F009C48FE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HSUZ2UJNHR;
@@ -518,6 +628,38 @@
 			};
 			name = Release;
 		};
+		50F370A9206603D0009C48FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HSUZ2UJNHR;
+				INFOPLIST_FILE = "Mongolian IPA/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.studymongolian.MongolianIPAKeyboardContainer.Mongolian-IPA";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		50F370AA206603D0009C48FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HSUZ2UJNHR;
+				INFOPLIST_FILE = "Mongolian IPA/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.studymongolian.MongolianIPAKeyboardContainer.Mongolian-IPA";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -553,6 +695,15 @@
 			buildConfigurations = (
 				50F3709A2066030F009C48FE /* Debug */,
 				50F3709B2066030F009C48FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50F370A8206603D0009C48FE /* Build configuration list for PBXNativeTarget "Mongolian IPA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50F370A9206603D0009C48FE /* Debug */,
+				50F370AA206603D0009C48FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
